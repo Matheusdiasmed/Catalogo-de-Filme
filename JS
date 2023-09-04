@@ -1,0 +1,11 @@
+function adicionarFilme() {
+  var filmeFavorito = document.getElementById('filme').value
+  var link=document.getElementById('link').value
+  if(filmeFavorito.endsWith('jpg') || filmeFavorito.endsWith('png') || filmeFavorito.endsWith('jpeg'))
+  {
+    var elementoListaFilme = document.getElementById('listaFilmes')
+  elementoListaFilme.innerHTML=elementoListaFilme.innerHTML + "<a href=" + link + "target='_blank'>" + '<img src=' + filmeFavorito + '>' + "</a>"
+document.getElementById('filme').value = '' 
+document.getElementById('link').value = ''
+}
+  } 
